@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "¿Tiene costo?",
-      answer: "Sí, pero ofrecemos becas parciales. Queremos que nadie se quede fuera."
+      answer: "¡No! El programa es completamente gratuito. Lo hacemos así porque sabemos que muchas personas no tienen acceso a formación digital práctica. Nuestra motivación es cerrar esa brecha. Queremos que jóvenes de toda LATAM puedan descubrir su potencial, crear proyectos y acceder a oportunidades en el mundo tech — sin que el dinero sea una barrera."
     },
     {
       question: "¿Qué herramientas voy a aprender?",
