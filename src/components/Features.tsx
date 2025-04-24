@@ -14,7 +14,7 @@ const Features = () => {
     title: "Comunidad que inspira y conecta",
     description: "Forma parte de una red de apoyo que potencia tu desarrollo profesional y personal."
   }];
-  return <section className="py-16 px-4 bg-[4740ff] bg-inspira-purple">
+  return <section className="py-16 px-4 bg-[4740ff] bg-slate-50">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => <div key={index} className="bg-white rounded-xl shadow-lg p-6 card-hover animate-fade-in" style={{
