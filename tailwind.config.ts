@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// InspiraTech brand colors
+				inspira: {
+					darkBlue: "#040535",
+					blue: "#0f3994",
+					purple: "#4740ff",
+					turquoise: "#2ae5dc",
+					green: "#14e478",
+					teal: "#09a78b",
+					orange: "#fe924b"
 				}
+			},
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-1': 'linear-gradient(to right, #040535, #0f3994)',
+				'gradient-2': 'linear-gradient(to right, #040535, #4740ff)',
+				'gradient-3': 'linear-gradient(to right, #040535, #2ae5dc)',
+				'gradient-4': 'linear-gradient(to right, #14e478, #2ae5dc)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +105,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-right': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out forwards',
+				'fade-in-right': 'fade-in-right 0.5s ease-out forwards'
 			}
 		}
 	},
