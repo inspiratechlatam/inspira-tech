@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#inicio" className="flex items-center">
           <img 
-            src="/lovable-uploads/dfbbcf09-3f2e-40b2-827b-83bf06cd9159.png" 
+            src="/lovable-uploads/7e16fc16-a8b3-4d35-ac95-3219a61be640.png" 
             alt="Inspira Tech Logo"
             className="h-8 w-auto"
           />
