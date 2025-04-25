@@ -50,7 +50,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/6d7e7d52-a1a8-49c1-a88e-df9588ee9f22.png" 
             alt="Inspira Tech Logo"
-            className="h-12 w-auto"
+            className="h-10 w-auto"
           />
         </a>
 

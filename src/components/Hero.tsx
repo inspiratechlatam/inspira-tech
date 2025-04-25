@@ -5,11 +5,11 @@ import HighlightedText from "./HighlightedText";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#040535] to-[#4740ff] pt-16 pb-12">
+    <section id="inicio" className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#040535] to-[#4740ff] pt-20 pb-16 px-6 md:px-4">
       <div className="absolute inset-0 bg-gradient-to-b from-inspira-darkBlue/30 to-white/5 z-0"></div>
       
-      <div className="container mx-auto px-4 z-10">
-        <div className="max-w-3xl mx-auto md:mx-0">
+      <div className="container mx-auto z-10">
+        <div className="max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in">
             Conviértete en el <HighlightedText>perfil digital</HighlightedText> que las startups y empresas tech buscan
           </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
               <ArrowRight size={18} />
             </a>
             
-            <a href="#programa" className="btn-secondary">
+            <a href="#programa" className="btn-secondary text-center">
               Conoce más del programa
             </a>
           </div>
