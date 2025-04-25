@@ -3,18 +3,18 @@ import React from "react";
 
 const Team = () => {
   const teamMembers = [
-    { name: "Carmen Nepo", team: "Education Team", avatar: "https://i.pravatar.cc/150?img=1" },
-    { name: "Giuliana Rodríguez", team: "Growth Team", avatar: "https://i.pravatar.cc/150?img=5" },
-    { name: "Geraldyne Cáceres", team: "Community Team", avatar: "https://i.pravatar.cc/150?img=10" },
-    { name: "Andrea Tercero", team: "Education Team", avatar: "https://i.pravatar.cc/150?img=9" },
-    { name: "Keesy Robles", team: "Education Team", avatar: "https://i.pravatar.cc/150?img=11" },
-    { name: "Jennifer Cóndor", team: "Community Team", avatar: "https://i.pravatar.cc/150?img=13" },
-    { name: "Jean Correa", team: "Community Team", avatar: "https://i.pravatar.cc/150?img=15" },
-    { name: "Daniela Gadea", team: "Marketing Team", avatar: "https://i.pravatar.cc/150?img=21" },
-    { name: "Andrea Salas", team: "People Team", avatar: "https://i.pravatar.cc/150?img=23" },
-    { name: "Saúl Canturín", team: "Partnership Team", avatar: "https://i.pravatar.cc/150?img=17" },
-    { name: "Alis Requejo", team: "Marketing Team", avatar: "https://i.pravatar.cc/150?img=25" },
-    { name: "Alizee Gutierrez", team: "Marketing Team", avatar: "https://i.pravatar.cc/150?img=32" }
+    { name: "Carmen Nepo", team: "Education Team", avatar: "/lovable-uploads/209261cd-e259-43a4-bb71-25aceaf1e857.png" },
+    { name: "Giuliana Rodríguez", team: "Growth Team", avatar: "/lovable-uploads/727ab347-6026-4227-9c99-694a33b326ed.png" },
+    { name: "Geraldyne Cáceres", team: "Community Team", avatar: "/lovable-uploads/f7991198-d0b6-4e27-9f75-efe22a16b3f0.png" },
+    { name: "Andrea Tercero", team: "Education Team", avatar: "/lovable-uploads/31242e77-33b4-4770-9340-07e6d16ba3b4.png" },
+    { name: "Keesy Robles", team: "Education Team", avatar: "/lovable-uploads/2238c93c-3da9-4891-b0b1-9dcf50a764d2.png" },
+    { name: "Jennifer Cóndor", team: "Community Team", avatar: "/lovable-uploads/d4f62f7e-b885-4ee6-9797-ce51a9accf90.png" },
+    { name: "Jean Correa", team: "Community Team", avatar: "/lovable-uploads/4b2104ea-d92e-457e-8f67-f69b0514f633.png" },
+    { name: "Daniela Gadea", team: "Marketing Team", avatar: "/lovable-uploads/0f3ae811-534b-4324-8168-317f2bf4acfd.png" },
+    { name: "Andrea Salas", team: "People Team", avatar: "/lovable-uploads/d3b8a294-1aa2-4185-83d0-47d358e1c53d.png" },
+    { name: "Saúl Canturín", team: "Partnership Team", avatar: "/lovable-uploads/0e7a8407-da2f-43f4-ac0a-a0e35d8c0be3.png" },
+    { name: "Alis Requejo", team: "Marketing Team", avatar: "/lovable-uploads/0d3f59e2-b8b2-4ffe-b5c3-cc917a38f5fa.png" },
+    { name: "Alizee Gutierrez", team: "Marketing Team", avatar: "/lovable-uploads/a05c8415-6c7c-4ae5-a201-633605b27526.png" }
   ];
 
   return (
