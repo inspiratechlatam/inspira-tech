@@ -34,11 +34,10 @@ const Team = () => {
               className="bg-white rounded-lg p-4 text-center shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="relative mx-auto h-24 w-24 mb-4">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-inspira-purple to-inspira-turquoise"></div>
                 <img 
                   src={member.avatar} 
                   alt={member.name} 
-                  className="w-[90%] h-[90%] object-cover rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <h3 className="font-semibold text-lg text-inspira-darkBlue">{member.name}</h3>

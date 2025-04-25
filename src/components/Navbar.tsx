@@ -30,7 +30,7 @@ const Navbar = () => {
     name: "Contenido",
     href: "#contenido"
   }, {
-    name: "Mentores",
+    name: "Equipo",
     href: "#mentores"
   }, {
     name: "Testimonios",

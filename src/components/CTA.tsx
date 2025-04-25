@@ -15,7 +15,7 @@ const CTA = () => {
         
         <div className="flex justify-center">
           <a 
-            href="https://forms.gle/your-form-url" 
+            href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-primary"
