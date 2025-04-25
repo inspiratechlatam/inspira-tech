@@ -3,18 +3,20 @@ import React from "react";
 
 const Team = () => {
   const teamMembers = [
-    { name: "Carmen Nepo", team: "Education Team", avatar: "/lovable-uploads/209261cd-e259-43a4-bb71-25aceaf1e857.png" },
-    { name: "Giuliana Rodríguez", team: "Growth Team", avatar: "/lovable-uploads/727ab347-6026-4227-9c99-694a33b326ed.png" },
-    { name: "Geraldyne Cáceres", team: "Community Team", avatar: "/lovable-uploads/f7991198-d0b6-4e27-9f75-efe22a16b3f0.png" },
-    { name: "Andrea Tercero", team: "Education Team", avatar: "/lovable-uploads/31242e77-33b4-4770-9340-07e6d16ba3b4.png" },
-    { name: "Keesy Robles", team: "Education Team", avatar: "/lovable-uploads/2238c93c-3da9-4891-b0b1-9dcf50a764d2.png" },
-    { name: "Jennifer Cóndor", team: "Community Team", avatar: "/lovable-uploads/d4f62f7e-b885-4ee6-9797-ce51a9accf90.png" },
-    { name: "Jean Correa", team: "Community Team", avatar: "/lovable-uploads/4b2104ea-d92e-457e-8f67-f69b0514f633.png" },
-    { name: "Daniela Gadea", team: "Marketing Team", avatar: "/lovable-uploads/0f3ae811-534b-4324-8168-317f2bf4acfd.png" },
-    { name: "Andrea Salas", team: "People Team", avatar: "/lovable-uploads/d3b8a294-1aa2-4185-83d0-47d358e1c53d.png" },
-    { name: "Saúl Canturín", team: "Partnership Team", avatar: "/lovable-uploads/0e7a8407-da2f-43f4-ac0a-a0e35d8c0be3.png" },
-    { name: "Alis Requejo", team: "Marketing Team", avatar: "/lovable-uploads/0d3f59e2-b8b2-4ffe-b5c3-cc917a38f5fa.png" },
-    { name: "Alizee Gutierrez", team: "Marketing Team", avatar: "/lovable-uploads/a05c8415-6c7c-4ae5-a201-633605b27526.png" }
+    { name: "Carmen Nepo", team: "Education Team", avatar: "/lovable-uploads/3a3c1bfc-0e10-4403-82c2-eab94b387bf5.png" },
+    { name: "Giuliana Rodríguez", team: "Growth Team", avatar: "/lovable-uploads/8e3caee4-3225-4584-832c-c17ad3bc6043.png" },
+    { name: "Geraldyne Cáceres", team: "Community Team", avatar: "/lovable-uploads/a6bc7da1-51c3-4fcf-a00b-868d98b4d930.png" },
+    { name: "Andrea Tercero", team: "Education Team", avatar: "/lovable-uploads/fcbad325-e4a5-4097-9279-84b34207d8fe.png" },
+    { name: "Keesy Robles", team: "Education Team", avatar: "/lovable-uploads/24371a1c-8679-425f-b7e3-c3cb624a3d93.png" },
+    { name: "Jennifer Cóndor", team: "Community Team", avatar: "/lovable-uploads/4ef37f66-92c5-4c5c-bc5d-33f7ef4b6cba.png" },
+    { name: "Jean Correa", team: "Community Team", avatar: "/lovable-uploads/fb762b87-f9d9-446d-b1e5-d84cadf0fdd9.png" },
+    { name: "Daniela Gadea", team: "Marketing Team", avatar: "/lovable-uploads/59b8039a-6922-4f45-8e67-c2eb171eee16.png" },
+    { name: "Andrea Salas", team: "People Team", avatar: "/lovable-uploads/aae0e11f-9a46-47a0-b187-4b0132c23544.png" },
+    { name: "Saúl Canturín", team: "Partnership Team", avatar: "/lovable-uploads/74f2afe7-e0c1-4ad2-a13e-69e1eb23e5f6.png" },
+    { name: "Alis Requejo", team: "Marketing Team", avatar: "/lovable-uploads/db5fefdd-546a-4dd5-820f-186283a9d4e6.png" },
+    { name: "Alizee Gutierrez", team: "Marketing Team", avatar: "/lovable-uploads/9349a18e-8cf2-4089-afe2-07acabfb20ea.png" },
+    { name: "Alessandra Igmizu", team: "Community Team", avatar: "/lovable-uploads/c4e0674e-965f-4267-b6e5-af88d7429499.png" },
+    { name: "Cris Richard Chavez", team: "People Team", avatar: "/lovable-uploads/1eab4190-3fbe-4bb7-9d14-b7be3c3d4f70.png" }
   ];
 
   return (
