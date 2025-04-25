@@ -46,23 +46,20 @@ const Navbar = () => {
   return (
     <nav className={cn("fixed w-full z-50 transition-all duration-300 py-4 px-6", isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent")}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* Logo */}
         <a href="#inicio" className="flex items-center">
           <img 
-            src="/lovable-uploads/7e16fc16-a8b3-4d35-ac95-3219a61be640.png" 
+            src="/lovable-uploads/6d7e7d52-a1a8-49c1-a88e-df9588ee9f22.png" 
             alt="Inspira Tech Logo"
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
         </a>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map(link => <a key={link.name} href={link.href} className="text-white hover:text-inspira-turquoise transition-colors font-medium">
               {link.name}
             </a>)}
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white p-2">
             <Menu size={24} />
@@ -70,7 +67,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-inspira-darkBlue py-4 px-6 shadow-md">
           {navLinks.map(link => <a key={link.name} href={link.href} className="block py-2 text-white hover:text-inspira-turquoise transition-colors" onClick={() => setIsMenuOpen(false)}>
               {link.name}

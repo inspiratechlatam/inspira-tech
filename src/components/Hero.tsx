@@ -1,13 +1,17 @@
+
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import HighlightedText from "./HighlightedText";
+
 const Hero = () => {
-  return <section id="inicio" className="relative min-h-screen flex items-center bg-gradient-to-br from-[#040535] to-[#4740ff] pt-16">
+  return (
+    <section id="inicio" className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#040535] to-[#4740ff] pt-16 pb-12">
       <div className="absolute inset-0 bg-gradient-to-b from-inspira-darkBlue/30 to-white/5 z-0"></div>
       
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto md:mx-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in">
-            Conviértete en el perfil digital que las startups y empresas tech buscan
+            Conviértete en el <HighlightedText>perfil digital</HighlightedText> que las startups y empresas tech buscan
           </h1>
           
           <p className="mt-6 text-lg md:text-xl text-white/90 animate-fade-in animate-delay-100">
@@ -27,8 +31,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
-      
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
