@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -17,6 +19,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const navLinks = [{
     name: "Inicio",
     href: "#inicio"
@@ -39,11 +42,17 @@ const Navbar = () => {
     name: "Únete",
     href: "#unete"
   }];
-  return <nav className={cn("fixed w-full z-50 transition-all duration-300 py-4 px-6", isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent")}>
+
+  return (
+    <nav className={cn("fixed w-full z-50 transition-all duration-300 py-4 px-6", isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent")}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="#inicio" className="flex items-center">
-          <img src="/lovable-uploads/7e16fc16-a8b3-4d35-ac95-3219a61be640.png" alt="Inspira Tech Logo" className="h-8 w-auto object-contain" />
+          <img 
+            src="/lovable-uploads/7e16fc16-a8b3-4d35-ac95-3219a61be640.png" 
+            alt="Inspira Tech Logo"
+            className="h-8 w-auto"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -67,6 +76,8 @@ const Navbar = () => {
               {link.name}
             </a>)}
         </div>}
-    </nav>;
+    </nav>
+  );
 };
+
 export default Navbar;
