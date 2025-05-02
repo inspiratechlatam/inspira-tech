@@ -30,25 +30,26 @@ const Program = () => {
     <section id="programa" className="py-20 px-4 bg-gray-50">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-inspira-darkBlue mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-inspira-darkBlue mb-6 animate-fade-in">
             ¿Cómo funciona el programa?
           </h2>
           
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in animate-delay-100">
             Inspira Tech es un programa intensivo 100% online que combina teoría (20%) y práctica (80%) para enseñarte habilidades digitales con impacto real. Desde la primera semana construirás un proyecto propio con el apoyo de expertos.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {programFeatures.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="bg-gray-50 p-3 rounded-full w-fit mb-4">
+              <div className="bg-gray-50 p-3 rounded-full w-fit mb-4 mx-auto">
                 {feature.icon}
               </div>
-              <p className="text-gray-700">{feature.text}</p>
+              <p className="text-gray-700 text-center">{feature.text}</p>
             </div>
           ))}
         </div>

@@ -5,12 +5,12 @@ const CTA = () => {
   return (
     <section id="unete" className="py-20 px-4 bg-gradient-to-br from-inspira-darkBlue to-inspira-blue text-white">
       <div className="container mx-auto max-w-3xl text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          ¿Quieres ser parte del próximo cohorte de Inspira Tech?
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
+          🚀 ¡Sé parte de la próxima generación de líderes digitales en LATAM!
         </h2>
         
-        <p className="text-lg mb-10">
-          Únete a la lista de espera y te avisaremos antes que nadie.
+        <p className="text-lg mb-10 animate-fade-in animate-delay-100">
+          Regístrate y sé el primero en enterarte cuando abramos el Cohorte 2.
         </p>
         
         <div className="flex justify-center">
@@ -18,7 +18,7 @@ const CTA = () => {
             href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-primary animate-pulse"
           >
             Únete a la lista de espera
           </a>
