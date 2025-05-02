@@ -24,6 +24,10 @@ const Navbar = () => {
     };
   }, []);
 
+  // Always use dark background on Resources page
+  const isResourcePage = location.pathname === "/recursos";
+  const navBackground = isResourcePage || isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent";
+
   const navLinks = [{
     name: "Inicio",
     href: "/",
@@ -37,13 +41,13 @@ const Navbar = () => {
     href: isHomePage ? "#contenido" : "/#contenido",
     isLocal: isHomePage
   }, {
-    name: "Recursos",
-    href: "/recursos",
-    isLocal: false
-  }, {
     name: "Equipo",
     href: isHomePage ? "#mentores" : "/#mentores",
     isLocal: isHomePage
+  }, {
+    name: "Recursos",
+    href: "/recursos",
+    isLocal: false
   }, {
     name: "Testimonios",
     href: isHomePage ? "#testimonios" : "/#testimonios",
@@ -55,7 +59,7 @@ const Navbar = () => {
   }];
 
   return (
-    <nav className={cn("fixed w-full z-50 transition-all duration-300 py-4 px-6", isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent")}>
+    <nav className={cn("fixed w-full z-50 transition-all duration-300 py-4 px-6", navBackground)}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
