@@ -1,12 +1,13 @@
 
-import React, { useState } from "react";
-import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import React from "react";
+import { ExternalLink } from "lucide-react";
 
-interface Resource {
+export type ResourceType = "video" | "podcast" | "article";
+
+export interface Resource {
   title: string;
   url: string;
-  type: "video" | "podcast" | "article";
+  type: ResourceType;
 }
 
 interface ResourceBlockProps {
@@ -17,54 +18,48 @@ interface ResourceBlockProps {
 }
 
 const ResourceBlock = ({ icon, title, description, resources }: ResourceBlockProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+  const getResourceIcon = (type: ResourceType) => {
+    switch (type) {
+      case "video":
+        return "🎬";
+      case "podcast":
+        return "🎙️";
+      case "article":
+        return "📝";
+      default:
+        return "📚";
+    }
   };
 
   return (
-    <Card className="hover:shadow-lg transition-all duration-300">
-      <CardHeader 
-        className="cursor-pointer flex flex-row items-center justify-between p-6"
-        onClick={toggleExpand}
-      >
-        <div className="flex items-center gap-4">
-          <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-3">
-            {icon}
-          </div>
-          <h3 className="font-bold text-xl">{title}</h3>
+    <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="flex items-center gap-4 mb-4">
+        <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-3">
+          {icon}
         </div>
-        {isExpanded ? (
-          <ChevronUp className="h-5 w-5 text-gray-500" />
-        ) : (
-          <ChevronDown className="h-5 w-5 text-gray-500" />
-        )}
-      </CardHeader>
+        <h3 className="font-bold text-xl">{title}</h3>
+      </div>
       
-      {isExpanded && (
-        <CardContent className="px-6 pb-6">
-          <p className="mb-6 text-gray-600">{description}</p>
-          
-          <ul className="space-y-3">
-            {resources.map((resource, index) => (
-              <li key={index} className="flex items-start gap-2">
-                <span className="text-inspira-turquoise mt-1">•</span>
-                <a 
-                  href={resource.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-inspira-blue hover:text-inspira-purple flex items-center gap-1"
-                >
-                  {resource.title}
-                  <ExternalLink className="h-3 w-3" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-      )}
-    </Card>
+      <p className="mb-6 text-gray-600">
+        {description}
+      </p>
+      
+      <div className="space-y-4">
+        {resources.map((resource, index) => (
+          <a 
+            key={index} 
+            href={resource.url} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors"
+          >
+            <span>{getResourceIcon(resource.type)}</span>
+            <span className="flex-1">{resource.title}</span>
+            <ExternalLink className="h-4 w-4 text-gray-400" />
+          </a>
+        ))}
+      </div>
+    </div>
   );
 };
 

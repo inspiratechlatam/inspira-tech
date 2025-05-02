@@ -19,10 +19,9 @@ const ResourcesSection = () => {
         
         <div className="animate-fade-in animate-delay-200">
           <Link 
-            to="/recursos" 
-            className="bg-inspira-blue hover:bg-inspira-purple text-white font-bold px-8 py-3 rounded-full transition-all duration-300 inline-flex items-center gap-2"
+            to="/recursos#inicio" 
+            className="bg-inspira-blue hover:bg-inspira-purple text-white font-bold px-8 py-3 rounded-full transition-all duration-300 inline-block text-center"
           >
-            <BookOpen className="h-5 w-5" />
             Navegar recursos
           </Link>
         </div>

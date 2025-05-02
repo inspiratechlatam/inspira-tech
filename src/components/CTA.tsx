@@ -18,7 +18,7 @@ const CTA = () => {
             href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn-primary animate-pulse"
+            className="btn-primary animate-pulse text-center"
           >
             Únete a la lista de espera
           </a>

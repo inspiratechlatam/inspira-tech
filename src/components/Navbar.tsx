@@ -1,12 +1,14 @@
 
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,44 +26,44 @@ const Navbar = () => {
 
   const navLinks = [{
     name: "Inicio",
-    href: "#inicio",
-    isLocal: true
+    href: "/",
+    isLocal: false
   }, {
     name: "El programa",
-    href: "#programa",
-    isLocal: true
+    href: isHomePage ? "#programa" : "/#programa",
+    isLocal: isHomePage
   }, {
     name: "Contenido",
-    href: "#contenido",
-    isLocal: true
+    href: isHomePage ? "#contenido" : "/#contenido",
+    isLocal: isHomePage
   }, {
     name: "Recursos",
     href: "/recursos",
     isLocal: false
   }, {
     name: "Equipo",
-    href: "#mentores",
-    isLocal: true
+    href: isHomePage ? "#mentores" : "/#mentores",
+    isLocal: isHomePage
   }, {
     name: "Testimonios",
-    href: "#testimonios",
-    isLocal: true
+    href: isHomePage ? "#testimonios" : "/#testimonios",
+    isLocal: isHomePage
   }, {
     name: "FAQ",
-    href: "#faq",
-    isLocal: true
+    href: isHomePage ? "#faq" : "/#faq",
+    isLocal: isHomePage
   }];
 
   return (
     <nav className={cn("fixed w-full z-50 transition-all duration-300 py-4 px-6", isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent")}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#inicio" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/6d7e7d52-a1a8-49c1-a88e-df9588ee9f22.png" 
             alt="Inspira Tech Logo"
             className="h-8 w-auto"
           />
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map(link => (
@@ -87,7 +89,7 @@ const Navbar = () => {
             href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-inspira-turquoise text-inspira-darkBlue font-bold px-4 py-2 rounded-full hover:bg-opacity-90 transition-all animate-pulse"
+            className="bg-inspira-turquoise text-inspira-darkBlue font-bold px-4 py-2 rounded-full hover:bg-opacity-90 transition-all text-center"
           >
             Únete
           </a>

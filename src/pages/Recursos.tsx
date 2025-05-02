@@ -2,12 +2,12 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ResourceBlock from "@/components/ResourceBlock";
+import { Resource, ResourceType } from "@/components/ResourceBlock";
 import GlossaryItem from "@/components/GlossaryItem";
 import { Lightbulb, Hammer, Podcast, BookOpen, ArrowRight } from "lucide-react";
 
 const Recursos = () => {
-  const introResources = [
+  const introResources: Resource[] = [
     {
       title: "OpenAI sobre por qué las habilidades blandas son el futuro del trabajo",
       url: "https://open.spotify.com/episode/15U5deuVOOYj8YM0Q5AS9N?si=XqhTGJDvSPi_bycXFRbFsg",
@@ -25,7 +25,7 @@ const Recursos = () => {
     }
   ];
 
-  const toolsResources = [
+  const toolsResources: Resource[] = [
     {
       title: "[Tutorial Make] Automatización de IA ChatGPT",
       url: "https://www.youtube.com/watch?v=Bh1ytzaOuuc",
@@ -48,7 +48,7 @@ const Recursos = () => {
     }
   ];
 
-  const podcastResources = [
+  const podcastResources: Resource[] = [
     {
       title: "Startupeable – Enzo Cavaille",
       url: "https://open.spotify.com/show/0MJ4o9PiB0pe6u9wQK44zM",
@@ -175,7 +175,7 @@ const Recursos = () => {
     <div className="min-h-screen">
       <Navbar />
       
-      <div className="pt-20">
+      <div id="inicio" className="pt-28">
         {/* Hero section */}
         <section className="bg-gradient-to-br from-inspira-darkBlue to-inspira-blue text-white py-16 px-4">
           <div className="container mx-auto max-w-4xl text-center">
@@ -192,43 +192,130 @@ const Recursos = () => {
         {/* Resources blocks */}
         <section className="py-16 px-4 bg-gray-50">
           <div className="container mx-auto max-w-4xl">
-            <div className="grid grid-cols-1 gap-6">
-              <ResourceBlock
-                icon={<Lightbulb className="h-6 w-6" />}
-                title="Introducción al mundo startup y tech"
-                description="Conoce los conceptos esenciales del ecosistema digital y por qué habilidades como la empatía, la creatividad y la colaboración son tan relevantes como la tecnología."
-                resources={introResources}
-              />
-              
-              <ResourceBlock
-                icon={<Hammer className="h-6 w-6" />}
-                title="Herramientas No-code y Automatización"
-                description="Descubre cómo construir productos digitales sin saber programar y cómo automatizar tareas repetitivas para trabajar de forma más eficiente."
-                resources={toolsResources}
-              />
-              
-              <ResourceBlock
-                icon={<Podcast className="h-6 w-6" />}
-                title="Podcasts que inspiran"
-                description="Historias de líderes y emprendedores tech de LATAM que están construyendo empresas con propósito. Escúchalos mientras caminas, cocinas o trabajas."
-                resources={podcastResources}
-              />
-              
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-3">
-                    <BookOpen className="h-6 w-6" />
+            <div className="space-y-10">
+              {/* Intro Resources */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-2">
+                    <Lightbulb className="h-5 w-5" />
                   </div>
-                  <h3 className="font-bold text-xl">Wiki Inspira Tech</h3>
+                  <h2 className="text-2xl font-bold">Introducción al mundo startup y tech</h2>
                 </div>
                 
-                <p className="mb-6 text-gray-600">
+                <p className="mb-6 text-gray-600 pl-11">
+                  Conoce los conceptos esenciales del ecosistema digital y por qué habilidades como la empatía, la creatividad 
+                  y la colaboración son tan relevantes como la tecnología.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-11">
+                  {introResources.map((resource, index) => (
+                    <a 
+                      key={index} 
+                      href={resource.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex items-start gap-3"
+                    >
+                      <span className="text-2xl">
+                        {resource.type === "podcast" ? "🎙️" : resource.type === "video" ? "🎬" : "📝"}
+                      </span>
+                      <div>
+                        <p className="font-medium">{resource.title}</p>
+                        <p className="text-sm text-gray-500 mt-1">
+                          {resource.type === "podcast" ? "Podcast" : resource.type === "video" ? "Video" : "Artículo"}
+                        </p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Tools Resources */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-2">
+                    <Hammer className="h-5 w-5" />
+                  </div>
+                  <h2 className="text-2xl font-bold">Herramientas No-code y Automatización</h2>
+                </div>
+                
+                <p className="mb-6 text-gray-600 pl-11">
+                  Descubre cómo construir productos digitales sin saber programar y cómo automatizar tareas 
+                  repetitivas para trabajar de forma más eficiente.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-11">
+                  {toolsResources.map((resource, index) => (
+                    <a 
+                      key={index} 
+                      href={resource.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex items-start gap-3"
+                    >
+                      <span className="text-2xl">
+                        {resource.type === "podcast" ? "🎙️" : resource.type === "video" ? "🎬" : "📝"}
+                      </span>
+                      <div>
+                        <p className="font-medium">{resource.title}</p>
+                        <p className="text-sm text-gray-500 mt-1">
+                          {resource.type === "podcast" ? "Podcast" : resource.type === "video" ? "Video" : "Artículo"}
+                        </p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Podcast Resources */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-2">
+                    <Podcast className="h-5 w-5" />
+                  </div>
+                  <h2 className="text-2xl font-bold">Podcasts que inspiran</h2>
+                </div>
+                
+                <p className="mb-6 text-gray-600 pl-11">
+                  Historias de líderes y emprendedores tech de LATAM que están construyendo empresas con propósito. 
+                  Escúchalos mientras caminas, cocinas o trabajas.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-11">
+                  {podcastResources.map((resource, index) => (
+                    <a 
+                      key={index} 
+                      href={resource.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex items-start gap-3"
+                    >
+                      <span className="text-2xl">🎙️</span>
+                      <div>
+                        <p className="font-medium">{resource.title}</p>
+                        <p className="text-sm text-gray-500 mt-1">Podcast</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Glossary */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full p-2">
+                    <BookOpen className="h-5 w-5" />
+                  </div>
+                  <h2 className="text-2xl font-bold">Wiki Inspira Tech</h2>
+                </div>
+                
+                <p className="mb-6 text-gray-600 pl-11">
                   Te presentamos nuestro diccionario, glosario, lingo… (llámalo como prefieras) para que veas que hablar en digital
                   —al igual que tus mentores y amigos— no es tan difícil como parece. Este es solo un pequeño diccionario, pero en la
                   práctica descubrirás muchas palabras más:
                 </p>
                 
-                <div className="space-y-2">
+                <div className="space-y-2 pl-11">
                   {glossaryItems.map((item, index) => (
                     <GlossaryItem 
                       key={index}
@@ -244,19 +331,20 @@ const Recursos = () => {
             </div>
             
             {/* CTA */}
-            <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold mb-6">
-                ¿Quieres seguir aprendiendo con nosotros y llevar tu idea o perfil digital al siguiente nivel?
-              </h3>
-              <a 
-                href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-inspira-turquoise hover:bg-opacity-90 text-inspira-darkBlue font-bold px-8 py-3 rounded-full transition-all inline-flex items-center gap-2"
-              >
-                Aprender más con Inspira Tech
-                <ArrowRight className="h-5 w-5" />
-              </a>
+            <div className="mt-16 py-12 px-6 bg-gradient-to-br from-inspira-darkBlue to-inspira-blue text-white rounded-lg">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-6">
+                  ¿Quieres seguir aprendiendo con nosotros y llevar tu idea o perfil digital al siguiente nivel?
+                </h3>
+                <a 
+                  href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-inspira-turquoise hover:bg-opacity-90 text-inspira-darkBlue font-bold px-8 py-3 rounded-full transition-all inline-block text-center"
+                >
+                  Aprender más con Inspira Tech
+                </a>
+              </div>
             </div>
           </div>
         </section>
