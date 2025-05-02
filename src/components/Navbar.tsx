@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 
@@ -23,22 +24,32 @@ const Navbar = () => {
 
   const navLinks = [{
     name: "Inicio",
-    href: "#inicio"
+    href: "#inicio",
+    isLocal: true
   }, {
     name: "El programa",
-    href: "#programa"
+    href: "#programa",
+    isLocal: true
   }, {
     name: "Contenido",
-    href: "#contenido"
+    href: "#contenido",
+    isLocal: true
+  }, {
+    name: "Recursos",
+    href: "/recursos",
+    isLocal: false
   }, {
     name: "Equipo",
-    href: "#mentores"
+    href: "#mentores",
+    isLocal: true
   }, {
     name: "Testimonios",
-    href: "#testimonios"
+    href: "#testimonios",
+    isLocal: true
   }, {
     name: "FAQ",
-    href: "#faq"
+    href: "#faq",
+    isLocal: true
   }];
 
   return (
@@ -54,13 +65,23 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map(link => (
-            <a 
-              key={link.name} 
-              href={link.href} 
-              className="text-white hover:text-inspira-turquoise transition-colors font-medium"
-            >
-              {link.name}
-            </a>
+            link.isLocal ? (
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className="text-white hover:text-inspira-turquoise transition-colors font-medium"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-white hover:text-inspira-turquoise transition-colors font-medium"
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <a 
             href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
@@ -82,14 +103,25 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-inspira-darkBlue py-4 px-6 shadow-md">
           {navLinks.map(link => (
-            <a 
-              key={link.name} 
-              href={link.href} 
-              className="block py-2 text-white hover:text-inspira-turquoise transition-colors" 
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {link.name}
-            </a>
+            link.isLocal ? (
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className="block py-2 text-white hover:text-inspira-turquoise transition-colors" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="block py-2 text-white hover:text-inspira-turquoise transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <a 
             href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 

@@ -8,8 +8,6 @@ const Team = () => {
     { name: "Geraldyne Cáceres", team: "Community Team", avatar: "/lovable-uploads/a6bc7da1-51c3-4fcf-a00b-868d98b4d930.png" },
     { name: "Andrea Tercero", team: "Education Team", avatar: "/lovable-uploads/fcbad325-e4a5-4097-9279-84b34207d8fe.png" },
     { name: "Keesy Robles", team: "Education Team", avatar: "/lovable-uploads/24371a1c-8679-425f-b7e3-c3cb624a3d93.png" },
-    { name: "Jennifer Cóndor", team: "Community Team", avatar: "/lovable-uploads/4ef37f66-92c5-4c5c-bc5d-33f7ef4b6cba.png" },
-    { name: "Jean Correa", team: "Community Team", avatar: "/lovable-uploads/fb762b87-f9d9-446d-b1e5-d84cadf0fdd9.png" },
     { name: "Daniela Gadea", team: "Marketing Team", avatar: "/lovable-uploads/59b8039a-6922-4f45-8e67-c2eb171eee16.png" },
     { name: "Andrea Salas", team: "People Team", avatar: "/lovable-uploads/aae0e11f-9a46-47a0-b187-4b0132c23544.png" },
     { name: "Saúl Canturín", team: "Partnership Team", avatar: "/lovable-uploads/74f2afe7-e0c1-4ad2-a13e-69e1eb23e5f6.png" },

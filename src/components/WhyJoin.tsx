@@ -1,28 +1,22 @@
 
 import React from "react";
-import { Sparkles, Users, Brain, Rocket, Globe } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const WhyJoin = () => {
   const reasons = [
     {
-      icon: <Brain className="h-6 w-6 text-inspira-turquoise" />,
       text: "Construyes algo real desde el primer día"
     },
     {
-      icon: <Rocket className="h-6 w-6 text-inspira-turquoise" />,
       text: "Aprendes con expertos activos en startups"
     },
     {
-      icon: <Users className="h-6 w-6 text-inspira-turquoise" />,
       text: "Conectas con personas que comparten tu camino"
     },
     {
-      icon: <Globe className="h-6 w-6 text-inspira-turquoise" />,
       text: "Accedes a recursos exclusivos del mundo tech LATAM"
     },
     {
-      icon: <Sparkles className="h-6 w-6 text-inspira-turquoise" />,
       text: "Participas en meetups y dinámicas comunitarias"
     }
   ];
@@ -35,7 +29,7 @@ const WhyJoin = () => {
         </h2>
         
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:w-2/3">
+          <div className="flex flex-col gap-4 md:w-1/2">
             {reasons.map((reason, index) => (
               <Card 
                 key={index} 
@@ -43,18 +37,13 @@ const WhyJoin = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                      {reason.icon}
-                    </div>
-                    <p className="text-lg">{reason.text}</p>
-                  </div>
+                  <p className="text-lg">{reason.text}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
           
-          <div className="md:w-1/3 flex items-center justify-center animate-fade-in animate-delay-500">
+          <div className="md:w-1/2 flex items-center justify-center animate-fade-in animate-delay-500">
             <img
               alt="Razones para unirse a Inspira Tech"
               className="rounded-lg shadow-lg max-w-full h-auto hover:scale-105 transition-transform duration-300"

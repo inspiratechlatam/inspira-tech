@@ -8,6 +8,7 @@ import ContentSection from "@/components/ContentSection";
 import WhyJoin from "@/components/WhyJoin";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
+import ResourcesSection from "@/components/ResourcesSection";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -23,6 +24,7 @@ const Index = () => {
       <WhyJoin />
       <Team />
       <Testimonials />
+      <ResourcesSection />
       <FAQ />
       <CTA />
       <Footer />
