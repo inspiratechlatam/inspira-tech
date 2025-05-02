@@ -34,42 +34,33 @@ const WhyJoin = () => {
           ¿Por qué unirte a Inspira Tech?
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map((reason, index) => (
-            <Card 
-              key={index} 
-              className="hover:shadow-lg transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardContent className="p-6">
-                <div className="flex flex-col items-center text-center">
-                  <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                    {reason.icon}
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:w-2/3">
+            {reasons.map((reason, index) => (
+              <Card 
+                key={index} 
+                className="hover:shadow-lg transition-all duration-300 animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="bg-gradient-to-br from-inspira-blue to-inspira-purple text-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                      {reason.icon}
+                    </div>
+                    <p className="text-lg">{reason.text}</p>
                   </div>
-                  <p className="text-lg">{reason.text}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
-        <div className="mt-12 flex justify-center animate-fade-in animate-delay-500">
-          <a 
-            href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            ¡Yo quiero ser un Inspirer!
-          </a>
-        </div>
-
-        <div className="flex justify-center items-center mt-12 animate-fade-in animate-delay-500">
-          <img
-            alt="Razones para unirse a Inspira Tech"
-            className="rounded-lg shadow-lg max-w-full h-auto hover:scale-105 transition-transform duration-300"
-            src="/lovable-uploads/035d133d-4ab5-4dd7-9afc-1dbf92c42c41.jpg"
-          />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="md:w-1/3 flex items-center justify-center animate-fade-in animate-delay-500">
+            <img
+              alt="Razones para unirse a Inspira Tech"
+              className="rounded-lg shadow-lg max-w-full h-auto hover:scale-105 transition-transform duration-300"
+              src="/lovable-uploads/035d133d-4ab5-4dd7-9afc-1dbf92c42c41.jpg"
+            />
+          </div>
         </div>
       </div>
     </section>

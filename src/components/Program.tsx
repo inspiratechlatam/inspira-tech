@@ -39,11 +39,11 @@ const Program = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           {programFeatures.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in w-full sm:w-64"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="bg-gray-50 p-3 rounded-full w-fit mb-4 mx-auto">
