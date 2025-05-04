@@ -1,23 +1,29 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { GraduationCap, Code, Users, BookOpen, Users2 } from "lucide-react";
 
 const WhyJoin = () => {
   const reasons = [
     {
-      text: "Construyes algo real desde el primer día"
+      text: "Construyes algo real desde el primer día",
+      icon: Code
     },
     {
-      text: "Aprendes con expertos activos en startups"
+      text: "Aprendes con expertos activos en startups",
+      icon: GraduationCap
     },
     {
-      text: "Conectas con personas que comparten tu camino"
+      text: "Conectas con personas que comparten tu camino",
+      icon: Users
     },
     {
-      text: "Accedes a recursos exclusivos del mundo tech LATAM"
+      text: "Accedes a recursos exclusivos del mundo tech LATAM",
+      icon: BookOpen
     },
     {
-      text: "Participas en meetups y dinámicas comunitarias"
+      text: "Participas en meetups y dinámicas comunitarias",
+      icon: Users2
     }
   ];
 
@@ -36,7 +42,10 @@ const WhyJoin = () => {
                 className="hover:shadow-lg transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <div className="text-inspira-blue">
+                    <reason.icon size={24} />
+                  </div>
                   <p className="text-lg">{reason.text}</p>
                 </CardContent>
               </Card>

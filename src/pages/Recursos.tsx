@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -170,9 +169,9 @@ const Recursos = () => {
     <div className="min-h-screen">
       <Navbar />
       
-      <div id="inicio" className="pt-28">
-        {/* Hero section */}
-        <section className="bg-gradient-to-br from-inspira-darkBlue to-inspira-blue text-white py-16 px-4">
+      <div id="inicio" className="pt-0">
+        {/* Hero section - Fixed to take full width with no white space */}
+        <section className="bg-gradient-to-br from-inspira-darkBlue to-inspira-blue text-white py-16 px-4 pt-28">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 animate-fade-in">
               Tu ruta en el ecosistema digital empieza aquí
