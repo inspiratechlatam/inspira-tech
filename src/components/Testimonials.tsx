@@ -18,13 +18,13 @@ const Testimonials = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-scroll testimonials
+  // Auto-scroll testimonials - changed from 5000 to 10000 ms (10 seconds)
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 10000);
     
     return () => clearInterval(interval);
   }, [testimonials.length]);

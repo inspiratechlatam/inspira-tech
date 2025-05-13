@@ -19,7 +19,7 @@ const ResourcesSection = () => {
         
         <div className="animate-fade-in animate-delay-200">
           <Link 
-            to="/recursos#inicio" 
+            to="/recursos" 
             className="bg-inspira-blue hover:bg-inspira-purple text-white font-bold px-8 py-3 rounded-full transition-all duration-300 inline-block text-center"
           >
             Navegar recursos
