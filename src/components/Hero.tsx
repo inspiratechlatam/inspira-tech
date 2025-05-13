@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           <div className="max-w-3xl text-center px-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in">
-              Conviértete en el perfil digital que las startups y empresas tech buscan
+              Conviértete en el perfil digital que las startups buscan
             </h1>
             
             <p className="mt-6 text-lg md:text-xl text-white/90 animate-fade-in animate-delay-100">
