@@ -5,18 +5,13 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Gracias a Inspira Tech lancé mi primer MVP. No sabía nada antes.",
-      author: "Camila",
+      quote: "En el Demo Day, presentamos nuestra propuesta y fuimos reconocidos como el equipo ganador. Pero más allá del premio, nos llevamos el aprendizaje, la conexión con mentores y el impulso de una comunidad increíble.",
+      author: "Laura",
       cohort: "Cohorte 1"
     },
     {
-      quote: "Me dio claridad, herramientas y comunidad.",
-      author: "Jorge",
-      cohort: "Cohorte 1"
-    },
-    {
-      quote: "Lo mejor fue aplicar desde el primer día.",
-      author: "Mariana",
+      quote: "Después de casi mes y medio, siento tanta emoción de los grandes pasos que he dado para avanzar en mi emprendimiento. Ahora puedo manejar la landing page con Lovable, realizar automatizaciones en Make y usar Notion para... bueno realmente qué no se puede hacer en Notion? Es una navaja suiza con multiples usos. La amé.",
+      author: "Valenttina",
       cohort: "Cohorte 1"
     }
   ];
