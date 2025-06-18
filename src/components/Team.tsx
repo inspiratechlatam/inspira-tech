@@ -10,7 +10,6 @@ const Team = () => {
     { name: "Keesy Robles", team: "Education Team", avatar: "/lovable-uploads/24371a1c-8679-425f-b7e3-c3cb624a3d93.png" },
     { name: "Daniela Gadea", team: "Marketing Team", avatar: "/lovable-uploads/59b8039a-6922-4f45-8e67-c2eb171eee16.png" },
     { name: "Andrea Salas", team: "People Team", avatar: "/lovable-uploads/aae0e11f-9a46-47a0-b187-4b0132c23544.png" },
-    { name: "Saúl Canturín", team: "Partnership Team", avatar: "/lovable-uploads/74f2afe7-e0c1-4ad2-a13e-69e1eb23e5f6.png" },
     { name: "Alis Requejo", team: "Marketing Team", avatar: "/lovable-uploads/db5fefdd-546a-4dd5-820f-186283a9d4e6.png" },
     { name: "Alizee Gutierrez", team: "Marketing Team", avatar: "/lovable-uploads/9349a18e-8cf2-4089-afe2-07acabfb20ea.png" },
     { name: "Alessandra Igmizu", team: "Community Team", avatar: "/lovable-uploads/c4e0674e-965f-4267-b6e5-af88d7429499.png" },

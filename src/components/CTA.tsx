@@ -20,7 +20,7 @@ const CTA = () => {
             rel="noopener noreferrer"
             className="btn-primary animate-pulse text-center"
           >
-            Únete a la lista de espera
+            Aplica al Programa No-code Builders
           </a>
         </div>
         

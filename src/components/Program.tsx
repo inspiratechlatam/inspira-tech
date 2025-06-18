@@ -31,11 +31,11 @@ const Program = () => {
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-inspira-darkBlue mb-6 animate-fade-in">
-            ¿Cómo funciona el programa?
+            ¿Cómo funciona el programa No-code Builders desde 0?
           </h2>
           
           <p className="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in animate-delay-100">
-            Inspira Tech es un programa intensivo 100% online que combina teoría (20%) y práctica (80%) para enseñarte habilidades digitales con impacto real. Desde la primera semana construirás un proyecto propio con el apoyo de expertos.
+            No-code Builders desde 0 es un programa intensivo 100% online que combina teoría (20%) y práctica (80%) para enseñarte habilidades digitales con impacto real. Desde la primera semana construirás un proyecto propio con el apoyo de expertos.
           </p>
         </div>
         

@@ -21,7 +21,7 @@ const Hero = () => {
             
             <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in animate-delay-200 mb-4">
               <a href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" className="btn-primary text-center w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
-                Únete a la lista de espera
+                Aplica al Programa No-code Builders
               </a>
               
               <a href="#programa" className="btn-secondary text-center w-full sm:w-auto">
