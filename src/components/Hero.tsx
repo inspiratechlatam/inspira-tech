@@ -19,13 +19,9 @@ const Hero = () => {
               en un programa 80% práctico liderado por expertos del ecosistema tech de LATAM.
             </p>
             
-            <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in animate-delay-200 mb-4">
-              <a href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" className="btn-primary text-center w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
+            <div className="mt-6 flex justify-center animate-fade-in animate-delay-200 mb-4">
+              <a href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" className="btn-primary text-center" target="_blank" rel="noopener noreferrer">
                 Aplica al Programa No-code Builders
-              </a>
-              
-              <a href="#programa" className="btn-secondary text-center w-full sm:w-auto">
-                Conoce más del programa
               </a>
             </div>
           </div>
