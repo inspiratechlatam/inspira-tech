@@ -11,7 +11,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "¿Cuándo empieza el Cohorte 2?",
-      answer: "Aún no anunciamos fecha, pero si te unes a la lista, serás el primero en saberlo."
+      answer: "Inicia el sábado 19 de julio con 7 semanas de duración."
     },
     {
       question: "¿Necesito saber programar?",
@@ -19,11 +19,11 @@ const FAQ = () => {
     },
     {
       question: "¿Cuánto tiempo requiere?",
-      answer: "Entre 4–6 horas semanales, incluyendo sesiones y entregables."
+      answer: "Una sesión en vivo de 2 horas por semana, más tiempo para entregables."
     },
     {
       question: "¿Tiene costo?",
-      answer: "¡No! El programa es completamente gratuito. Lo hacemos así porque sabemos que muchas personas no tienen acceso a formación digital práctica. Nuestra motivación es cerrar esa brecha. Queremos que jóvenes de toda LATAM puedan descubrir su potencial, crear proyectos y acceder a oportunidades en el mundo tech — sin que el dinero sea una barrera."
+      answer: "Sí, tiene un aporte simbólico de $6 USD que nos ayuda a cubrir los costos del programa y mantener la calidad de la experiencia de aprendizaje."
     },
     {
       question: "¿Qué herramientas voy a aprender?",

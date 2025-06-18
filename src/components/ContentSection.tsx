@@ -1,51 +1,65 @@
 
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Target, Globe, Sparkles, Library, PresentationIcon, Award } from "lucide-react";
+import { Target, Globe, Sparkles, Library, PresentationIcon, Award, Zap } from "lucide-react";
 
 const ContentSection = () => {
   const weeks = [
     {
       id: "week1",
       icon: <Target className="h-6 w-6 text-white" />,
-      title: "Semana 1: Startups, impacto & propósito digital",
-      description: "Inmersión profunda en el ecosistema startup de LATAM. Aprenderás a identificar problemas reales del mercado, validar ideas y definir el propósito estratégico de tu proyecto digital. Incluye análisis de casos de éxito y metodologías ágiles para la validación de propuesta de valor.",
-      activity: "Mapeo de problema, solución y propósito + canvas de propuesta de valor."
+      title: "Semana 1: Introducción al ecosistema startups y no-code",
+      date: "Sábado 19 de Julio",
+      description: "Explora el impacto del ecosistema de startups y las oportunidades del no-code. Define el propósito estratégico de tu proyecto digital usando metodologías de design thinking.",
+      activity: "Documento estratégico del proyecto: problema, solución, propósito, público objetivo y roadmap."
     },
     {
       id: "week2",
       icon: <Globe className="h-6 w-6 text-white" />,
-      title: "Semana 2: Arma tu landing no-code",
-      description: "Domina la creación de páginas web profesionales con Lovable.dev sin necesidad de programar. Aprenderás diseño UI/UX, copywriting persuasivo y optimización para conversión. Implementarás mejores prácticas en diseño web y técnicas para captar leads efectivamente.",
-      activity: "Construcción de landing page completa con diseño responsive, secciones interactivas y formularios."
+      title: "Semana 2: Crea tu landing page con Lovable",
+      date: "Sábado 2 de Agosto",
+      description: "Construye una landing page profesional sin programar. Aprende a diseñar propuestas de valor atractivas, formularios efectivos y conectar con bases de datos.",
+      activity: "Landing page completa con propuesta de valor, formularios, testimonios y conexión a Supabase."
     },
     {
       id: "week3",
-      icon: <Sparkles className="h-6 w-6 text-white" />,
-      title: "Semana 3: Automatiza con Make",
-      description: "Descubre el poder de la automatización para escalar procesos. Aprenderás a crear flujos automatizados que conecten tus herramientas digitales, ahorrando tiempo y reduciendo errores. Dominarás la integración entre aplicaciones para crear sistemas que funcionen mientras duermes.",
-      activity: "Implementación de sistema automático de respuesta a leads y seguimiento."
+      icon: <PresentationIcon className="h-6 w-6 text-white" />,
+      title: "Semana 3: Pitch deck con AI y feedback",
+      date: "Sábado 9 de Agosto",
+      description: "Domina los 10 elementos clave de un pitch efectivo. Utiliza herramientas de AI como Gamma AI y Gemini para crear presentaciones impactantes y diferenciarte de la competencia.",
+      activity: "Pitch deck profesional con research de ventajas competitivas y propuesta de valor diferencial."
     },
     {
       id: "week4",
-      icon: <Library className="h-6 w-6 text-white" />,
-      title: "Semana 4: Optimiza tu gestión con Notion",
-      description: "Transforma tu organización digital con Notion. Aprenderás a crear sistemas de gestión efectivos, bases de conocimiento y flujos de trabajo colaborativos para maximizar la productividad de tu proyecto. Implementarás bases de datos relacionales y automatizaciones internas.",
-      activity: "Desarrollo de workspace completo en Notion con templates personalizados."
+      icon: <Sparkles className="h-6 w-6 text-white" />,
+      title: "Semana 4: Prototipo de app web funcional",
+      date: "Sábado 16 de Agosto",
+      description: "Construye tu primer MVP usando metodologías ágiles. Aprende a priorizar funcionalidades, crear user journeys y desarrollar productos digitales iterativos.",
+      activity: "Mini PRD, user journey y prototipo funcional de app web con múltiples secciones."
     },
     {
       id: "week5",
-      icon: <PresentationIcon className="h-6 w-6 text-white" />,
-      title: "Semana 5: Aprende a hacer tu pitch",
-      description: "Domina el arte de presentar ideas de forma impactante. Aprenderás técnicas de storytelling, diseño de presentaciones y comunicación efectiva para cautivar a tu audiencia. Desarrollarás habilidades para transmitir tu mensaje de manera clara y persuasiva frente a cualquier público.",
-      activity: "Creación y práctica de pitch deck profesional con feedback personalizado."
+      icon: <Zap className="h-6 w-6 text-white" />,
+      title: "Semana 5: Automatización básica con Make",
+      date: "Sábado 23 de Agosto",
+      description: "Descubre el poder de Make para automatizar procesos. Crea flujos inteligentes que conecten formularios, emails y hojas de cálculo sin escribir código.",
+      activity: "Flujo automatizado: formulario → respuesta personalizada → almacenamiento → email automático."
     },
     {
       id: "week6",
+      icon: <Library className="h-6 w-6 text-white" />,
+      title: "Semana 6: Automatizaciones avanzadas - Make + WhatsApp + APIs",
+      date: "Sábado 30 de Agosto",
+      description: "Lleva las automatizaciones al siguiente nivel integrando WhatsApp, APIs y lógica condicional. Automatiza conversaciones y seguimiento de leads de forma profesional.",
+      activity: "Flujo completo: formulario → WhatsApp automático → base de datos → notificación al equipo."
+    },
+    {
+      id: "week7",
       icon: <Award className="h-6 w-6 text-white" />,
-      title: "Semana 6: Demo Day final",
-      description: "Culmina el programa presentando tu proyecto ante un panel de expertos del ecosistema tech. Recibirás feedback valioso y tendrás la oportunidad de expandir tu red profesional. Podrás mostrar todo lo aprendido y construido durante el programa en un ambiente profesional.",
-      activity: "Presentación final del proyecto y networking con la comunidad tech."
+      title: "Semana 7: Demo Day y networking con expertos",
+      date: "Sábado 6 de Septiembre",
+      description: "Presenta tu proyecto ante jurados expertos del ecosistema tech. Los 3 mejores proyectos competirán en formato pitch con feedback profesional y oportunidades de networking.",
+      activity: "Presentación final del proyecto y sesión de networking con la comunidad tech."
     }
   ];
 
@@ -53,12 +67,24 @@ const ContentSection = () => {
     <section id="contenido" className="py-20 px-4 bg-white">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-inspira-darkBlue mb-6 animate-fade-in">
-          Lo que aprenderás en <span className="text-inspira-blue">6 semanas</span>
+          Lo que aprenderás en <span className="text-inspira-blue">7 semanas</span>
         </h2>
         
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto animate-fade-in animate-delay-100">
-          Un programa intensivo e innovador diseñado para darte las habilidades digitales que necesitas para destacar en el mundo tech.
-        </p>
+        <div className="text-center mb-8 animate-fade-in animate-delay-100">
+          <p className="text-lg text-gray-600 mb-4 max-w-2xl mx-auto">
+            Un programa intensivo e innovador diseñado para darte las habilidades digitales que necesitas para destacar en el mundo tech.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-inspira-darkBlue font-semibold">
+            <div className="flex items-center gap-2">
+              <span>📅</span>
+              <span>Inicio: Sábado 19 de Julio</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>⏳</span>
+              <span>Duración: 7 semanas, con 1 sesión en vivo de 2 horas por semana</span>
+            </div>
+          </div>
+        </div>
         
         <Accordion type="single" collapsible className="w-full space-y-4">
           {weeks.map((week, index) => (
@@ -74,6 +100,7 @@ const ContentSection = () => {
                   </div>
                   <div className="text-left">
                     <div className="font-semibold">{week.title}</div>
+                    <div className="text-sm text-gray-500">{week.date}</div>
                   </div>
                 </div>
               </AccordionTrigger>
