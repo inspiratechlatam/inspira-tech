@@ -9,7 +9,7 @@ const ContentSection = () => {
       id: "week1",
       icon: <Target className="h-6 w-6 text-white" />,
       title: "Semana 1: Bienvenida y Onboarding + Introducción al ecosistema startups y no-code",
-      date: "Viernes 10 de Enero, 2026",
+      date: "Sábado 10 de Enero, 2026",
       description: "Explora el impacto del ecosistema de startups y las oportunidades del no-code. Define el propósito estratégico de tu proyecto digital usando metodologías de design thinking.",
       activity: "Documento estratégico del proyecto: problema, solución, propósito, público objetivo y roadmap."
     },
@@ -17,7 +17,7 @@ const ContentSection = () => {
       id: "week2",
       icon: <Globe className="h-6 w-6 text-white" />,
       title: "Sesión 2: Intro a No-code con Lovable ¡Arma tu página web",
-      date: "Viernes 17 de Enero, 2026",
+      date: "Sábado 17 de Enero, 2026",
       description: "Construye una landing page profesional sin programar. Aprende a diseñar propuestas de valor atractivas, formularios efectivos y conectar con bases de datos.",
       activity: "Landing page completa con propuesta de valor, formularios, testimonios y conexión a Supabase."
     },
@@ -25,7 +25,7 @@ const ContentSection = () => {
       id: "week3",
       icon: <PresentationIcon className="h-6 w-6 text-white" />,
       title: "Sesión 3: Arma tu pitch con IA & Sesión de feedback y credibilidad",
-      date: "Viernes 24 de Enero, 2026",
+      date: "Sábado 24 de Enero, 2026",
       description: "Domina los 10 elementos clave de un pitch efectivo. Utiliza herramientas de AI como Gamma AI y Gemini para crear presentaciones impactantes y diferenciarte de la competencia.",
       activity: "Pitch deck profesional con research de ventajas competitivas y propuesta de valor diferencial."
     },
@@ -33,7 +33,7 @@ const ContentSection = () => {
       id: "week4",
       icon: <Sparkles className="h-6 w-6 text-white" />,
       title: "Sesión 4: Construye un prototipo app web funcional en Lovable.dev - Parte 2",
-      date: "Viernes 31 de Enero, 2026",
+      date: "Sábado 31 de Enero, 2026",
       description: "Construye tu primer MVP usando metodologías ágiles. Aprende a priorizar funcionalidades, crear user journeys y desarrollar productos digitales iterativos.",
       activity: "Mini PRD, user journey y prototipo funcional de app web con múltiples secciones."
     },
@@ -41,7 +41,7 @@ const ContentSection = () => {
       id: "week5",
       icon: <Zap className="h-6 w-6 text-white" />,
       title: "Sesión 5: Intro práctica a N8N - Automatiza como un pro!",
-      date: "Viernes 7 de Febrero, 2026",
+      date: "Sábado 7 de Febrero, 2026",
       description: "Descubre el poder de N8N para automatizar procesos. Crea flujos inteligentes que conecten formularios, emails y hojas de cálculo sin escribir código.",
       activity: "Flujo automatizado: formulario → respuesta personalizada → almacenamiento → email automático."
     },
@@ -49,7 +49,7 @@ const ContentSection = () => {
       id: "week6",
       icon: <Library className="h-6 w-6 text-white" />,
       title: "Sesión 6: Automatizaciones con impacto N8N + WhatsApp o Telegram + APIs",
-      date: "Viernes 14 de Febrero, 2026",
+      date: "Sábado 14 de Febrero, 2026",
       description: "Lleva las automatizaciones al siguiente nivel integrando WhatsApp, APIs y lógica condicional. Automatiza conversaciones y seguimiento de leads de forma profesional.",
       activity: "Flujo completo: formulario → WhatsApp automático → base de datos → notificación al equipo."
     },
@@ -57,7 +57,7 @@ const ContentSection = () => {
       id: "week7",
       icon: <Award className="h-6 w-6 text-white" />,
       title: "Sesión 7: Inspira Tech Demo Day final: ¡Conectemos e inspiremos!",
-      date: "Viernes 21 de Febrero, 2026",
+      date: "Sábado 21 de Febrero, 2026",
       description: "Presenta tu proyecto ante jurados expertos del ecosistema tech. Los 3 mejores proyectos competirán en formato pitch con feedback profesional y oportunidades de networking.",
       activity: "Presentación final del proyecto y sesión de networking con la comunidad tech."
     }
