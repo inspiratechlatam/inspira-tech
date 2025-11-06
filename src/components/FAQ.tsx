@@ -10,8 +10,8 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "¿Cuándo empieza el Cohorte 2?",
-      answer: "Inicia el sábado 19 de julio con 7 semanas de duración."
+      question: "¿Cuándo empieza el Cohorte 3?",
+      answer: "Inicia el sábado 10 de enero con 7 semanas de duración."
     },
     {
       question: "¿Necesito saber programar?",
@@ -23,11 +23,11 @@ const FAQ = () => {
     },
     {
       question: "¿Tiene costo?",
-      answer: "Sí, tiene un aporte simbólico de $6 USD que nos ayuda a cubrir los costos del programa y mantener la calidad de la experiencia de aprendizaje."
+      answer: "Sí, tiene un aporte simbólico de $20 USD que nos ayuda a cubrir los costos del programa y mantener la calidad de la experiencia de aprendizaje."
     },
     {
       question: "¿Qué herramientas voy a aprender?",
-      answer: "Lovable.dev (no-code), Make (automatización), Notion (productividad), entre otras."
+      answer: "Lovable.dev (no-code), N8N (automatización), Supabase (backend), Notion (productividad), entre otras."
     }
   ];
 
