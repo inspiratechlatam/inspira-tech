@@ -48,7 +48,7 @@ const ContentSection = () => {
     {
       id: "week6",
       icon: <Library className="h-6 w-6 text-white" />,
-      title: "Sesión 6: Automatizaciones con impacto – N8N + WhatsApp o Telegram + APIs",
+      title: "Sesión 6: Automatizaciones con impacto N8N + WhatsApp o Telegram + APIs",
       date: "Viernes 14 de Febrero, 2026",
       description: "Lleva las automatizaciones al siguiente nivel integrando WhatsApp, APIs y lógica condicional. Automatiza conversaciones y seguimiento de leads de forma profesional.",
       activity: "Flujo completo: formulario → WhatsApp automático → base de datos → notificación al equipo."
