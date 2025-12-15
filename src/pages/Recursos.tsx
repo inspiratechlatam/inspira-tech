@@ -320,7 +320,7 @@ const Recursos = () => {
                   ¿Quieres seguir aprendiendo con nosotros y llevar tu idea o perfil digital al siguiente nivel?
                 </h3>
                 <a 
-                  href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
+                  href="https://airtable.com/appQSwwBh50GVi2k7/shrYlE6W51simzTvW" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-inspira-turquoise text-inspira-darkBlue font-bold px-8 py-3 rounded-full transition-all inline-block text-center"
