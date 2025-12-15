@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             
             <div className="mt-6 flex justify-center animate-fade-in animate-delay-200 mb-4">
-              <a href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" className="btn-primary text-center" target="_blank" rel="noopener noreferrer">
+              <a href="https://airtable.com/appQSwwBh50GVi2k7/shrYlE6W51simzTvW" className="btn-primary text-center" target="_blank" rel="noopener noreferrer">
                 Aplica al Programa No-code Builders
               </a>
             </div>

@@ -15,7 +15,7 @@ const CTA = () => {
         
         <div className="flex justify-center">
           <a 
-            href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
+            href="https://airtable.com/appQSwwBh50GVi2k7/shrYlE6W51simzTvW" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-primary animate-pulse text-center"
