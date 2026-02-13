@@ -4,12 +4,9 @@ import React from "react";
 const Team = () => {
   const teamMembers = [
     { name: "Carmen Nepo", team: "Education Team", avatar: "/lovable-uploads/3a3c1bfc-0e10-4403-82c2-eab94b387bf5.png" },
-    { name: "Giuliana Rodríguez", team: "Growth Team", avatar: "/lovable-uploads/8e3caee4-3225-4584-832c-c17ad3bc6043.png" },
     { name: "Geraldyne Cáceres", team: "Community Team", avatar: "/lovable-uploads/a6bc7da1-51c3-4fcf-a00b-868d98b4d930.png" },
-    { name: "Andrea Tercero", team: "Education Team", avatar: "/lovable-uploads/fcbad325-e4a5-4097-9279-84b34207d8fe.png" },
     { name: "Keesy Robles", team: "Education Team", avatar: "/lovable-uploads/24371a1c-8679-425f-b7e3-c3cb624a3d93.png" },
     { name: "Daniela Gadea", team: "Marketing Team", avatar: "/lovable-uploads/59b8039a-6922-4f45-8e67-c2eb171eee16.png" },
-    { name: "Andrea Salas", team: "People Team", avatar: "/lovable-uploads/aae0e11f-9a46-47a0-b187-4b0132c23544.png" },
     { name: "Alis Requejo", team: "Marketing Team", avatar: "/lovable-uploads/db5fefdd-546a-4dd5-820f-186283a9d4e6.png" },
     { name: "Alizee Gutierrez", team: "Marketing Team", avatar: "/lovable-uploads/9349a18e-8cf2-4089-afe2-07acabfb20ea.png" },
     { name: "Alessandra Igmizu", team: "Community Team", avatar: "/lovable-uploads/c4e0674e-965f-4267-b6e5-af88d7429499.png" },
