@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "¿Tiene costo?",
-      answer: "Sí, tiene un aporte simbólico de $20 USD que nos ayuda a cubrir los costos del programa y mantener la calidad de la experiencia de aprendizaje."
+      answer: "Sí, tiene un aporte simbólico de $50 USD (o S/170 soles peruanos) que nos ayuda a cubrir los costos del programa y mantener la calidad de la experiencia de aprendizaje."
     },
     {
       question: "¿Qué herramientas voy a aprender?",
