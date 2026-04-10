@@ -31,7 +31,7 @@ const WhyJoin = () => {
     <section id="porque-unirse" className="py-20 bg-gray-50 px-6">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in">
-          ¿Por qué aplicar a No-code Builders desde 0?
+          ¿Por qué aplicar al programa no-code builders de Inspira Tech?
         </h2>
         
         <div className="flex flex-col md:flex-row gap-8">
