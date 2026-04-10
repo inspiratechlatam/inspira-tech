@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Target, Globe, Sparkles, Library, PresentationIcon, Award, Zap } from "lucide-react";
+import { Target, Globe, Sparkles, Library, PresentationIcon, Award, Zap, MessageCircle } from "lucide-react";
 
 const ContentSection = () => {
   const weeks = [
@@ -39,25 +39,33 @@ const ContentSection = () => {
     },
     {
       id: "week5",
-      icon: <Zap className="h-6 w-6 text-white" />,
-      title: "Sesión 5: Intro práctica a N8N - Automatiza como un pro!",
+      icon: <MessageCircle className="h-6 w-6 text-white" />,
+      title: "Sesión 5: Feedback Lab – ¡Mejora tu producto con claridad y foco!",
       date: "Sábado 30 de Mayo",
+      description: "Espacio estratégico donde refinarás tu proyecto antes de entrar a automatizaciones con n8n. Recibirás feedback claro y estructurado sobre tu landing, pitch o MVP. Trabajarás en grupos pequeños con retroalimentación guiada según el framework Idea → Producto → Impacto usando el método Start → Stop → Continue.",
+      activity: "Presenta tu proyecto en 1-2 minutos, participa en retroalimentación estructurada sobre claridad del problema, propuesta de valor y experiencia de usuario, y completa tu Mini Roadmap de Mejora con prioridades críticas."
+    },
+    {
+      id: "week6",
+      icon: <Zap className="h-6 w-6 text-white" />,
+      title: "Sesión 6: Intro práctica a N8N - Automatiza como un pro!",
+      date: "Sábado 6 de Junio",
       description: "Descubre el poder de N8N para automatizar procesos. Crea flujos inteligentes que conecten formularios, emails y hojas de cálculo sin escribir código.",
       activity: "Flujo automatizado: formulario → respuesta personalizada → almacenamiento → email automático."
     },
     {
-      id: "week6",
+      id: "week7",
       icon: <Library className="h-6 w-6 text-white" />,
-      title: "Sesión 6: Automatizaciones con impacto N8N + WhatsApp o Telegram + APIs",
-      date: "Sábado 6 de Junio",
+      title: "Sesión 7: Automatizaciones con impacto N8N + WhatsApp o Telegram + APIs",
+      date: "Sábado 13 de Junio",
       description: "Lleva las automatizaciones al siguiente nivel integrando WhatsApp, APIs y lógica condicional. Automatiza conversaciones y seguimiento de leads de forma profesional.",
       activity: "Flujo completo: formulario → WhatsApp automático → base de datos → notificación al equipo."
     },
     {
-      id: "week7",
+      id: "week8",
       icon: <Award className="h-6 w-6 text-white" />,
-      title: "Sesión 7: Inspira Tech Demo Day final: ¡Conectemos e inspiremos!",
-      date: "Sábado 13 de Junio",
+      title: "Sesión 8: Inspira Tech Demo Day final: ¡Conectemos e inspiremos!",
+      date: "Sábado 20 de Junio",
       description: "Presenta tu proyecto ante jurados expertos del ecosistema tech. Los 3 mejores proyectos competirán en formato pitch con feedback profesional y oportunidades de networking.",
       activity: "Presentación final del proyecto y sesión de networking con la comunidad tech."
     }
