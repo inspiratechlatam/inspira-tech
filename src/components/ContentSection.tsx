@@ -67,7 +67,7 @@ const ContentSection = () => {
     <section id="contenido" className="py-20 px-4 bg-white">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-inspira-darkBlue mb-6 animate-fade-in">
-          Lo que aprenderás en <span className="text-inspira-blue">7 semanas</span>
+          Lo que aprenderás en <span className="text-inspira-blue">8 semanas</span>
         </h2>
         
         <div className="text-center mb-8 animate-fade-in animate-delay-100">
