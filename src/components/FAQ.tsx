@@ -10,7 +10,7 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "¿Cuándo empieza el Cohorte 3?",
+      question: "¿Cuándo empieza el Cohorte 4?",
       answer: "Inicia el sábado 9 de mayo con 8 semanas de duración."
     },
     {

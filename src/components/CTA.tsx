@@ -10,7 +10,7 @@ const CTA = () => {
         </h2>
         
         <p className="text-lg mb-10 animate-fade-in animate-delay-100">
-          Regístrate y sé el primero en enterarte cuando abramos el Cohorte 2.
+          Regístrate y sé el primero en enterarte cuando abramos el Cohorte 4.
         </p>
         
         <div className="flex justify-center">
