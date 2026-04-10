@@ -90,7 +90,7 @@ const Navbar = () => {
             )
           ))}
           <a 
-            href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
+            href="https://airtable.com/appOeyR0YYocmg8ns/shrKBBfrPvCqiGkay" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-inspira-turquoise text-inspira-darkBlue font-bold px-4 py-2 rounded-full hover:bg-opacity-90 transition-all text-center"
@@ -130,7 +130,7 @@ const Navbar = () => {
             )
           ))}
           <a 
-            href="https://airtable.com/appUU31Gq4ELV7uei/shrvbf7GdDYuYFSpa" 
+            href="https://airtable.com/appOeyR0YYocmg8ns/shrKBBfrPvCqiGkay" 
             target="_blank" 
             rel="noopener noreferrer"
             className="block mt-2 bg-inspira-turquoise text-inspira-darkBlue font-bold px-4 py-2 rounded-full hover:bg-opacity-90 transition-all text-center"
