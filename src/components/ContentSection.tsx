@@ -81,7 +81,7 @@ const ContentSection = () => {
             </div>
             <div className="flex items-center gap-2">
               <span>⏳</span>
-              <span>Duración: 7 semanas, con 1 sesión en vivo de 2 horas por semana</span>
+              <span>Duración: 8 semanas, con 1 sesión en vivo de 2 horas por semana</span>
             </div>
           </div>
         </div>
