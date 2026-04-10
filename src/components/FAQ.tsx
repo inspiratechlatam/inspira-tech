@@ -11,7 +11,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "¿Cuándo empieza el Cohorte 3?",
-      answer: "Inicia el sábado 2 de mayo con 8 semanas de duración."
+      answer: "Inicia el sábado 9 de mayo con 8 semanas de duración."
     },
     {
       question: "¿Necesito saber programar?",

@@ -9,7 +9,7 @@ const ContentSection = () => {
       id: "week1",
       icon: <Target className="h-6 w-6 text-white" />,
       title: "Semana 1: Bienvenida y Onboarding + Introducción al ecosistema startups y no-code",
-      date: "Sábado 2 de Mayo",
+      date: "Sábado 9 de Mayo",
       description: "Explora el impacto del ecosistema de startups y las oportunidades del no-code. Define el propósito estratégico de tu proyecto digital usando metodologías de design thinking.",
       activity: "Documento estratégico del proyecto: problema, solución, propósito, público objetivo y roadmap."
     },
@@ -17,7 +17,7 @@ const ContentSection = () => {
       id: "week2",
       icon: <Globe className="h-6 w-6 text-white" />,
       title: "Sesión 2: Intro a No-code con Lovable ¡Arma tu página web",
-      date: "Sábado 9 de Mayo",
+      date: "Sábado 16 de Mayo",
       description: "Construye una landing page profesional sin programar. Aprende a diseñar propuestas de valor atractivas, formularios efectivos y conectar con bases de datos.",
       activity: "Landing page completa con propuesta de valor, formularios, testimonios y conexión a Supabase."
     },
@@ -25,7 +25,7 @@ const ContentSection = () => {
       id: "week3",
       icon: <PresentationIcon className="h-6 w-6 text-white" />,
       title: "Sesión 3: Arma tu pitch con IA & Sesión de feedback y credibilidad",
-      date: "Sábado 16 de Mayo",
+      date: "Sábado 23 de Mayo",
       description: "Domina los 10 elementos clave de un pitch efectivo. Utiliza herramientas de AI como Gamma AI y Gemini para crear presentaciones impactantes y diferenciarte de la competencia.",
       activity: "Pitch deck profesional con research de ventajas competitivas y propuesta de valor diferencial."
     },
@@ -33,7 +33,7 @@ const ContentSection = () => {
       id: "week4",
       icon: <Sparkles className="h-6 w-6 text-white" />,
       title: "Sesión 4: Construye un prototipo app web funcional en Lovable.dev - Parte 2",
-      date: "Sábado 23 de Mayo",
+      date: "Sábado 30 de Mayo",
       description: "Construye tu primer MVP usando metodologías ágiles. Aprende a priorizar funcionalidades, crear user journeys y desarrollar productos digitales iterativos.",
       activity: "Mini PRD, user journey y prototipo funcional de app web con múltiples secciones."
     },
@@ -41,7 +41,7 @@ const ContentSection = () => {
       id: "week5",
       icon: <MessageCircle className="h-6 w-6 text-white" />,
       title: "Sesión 5: Feedback Lab – ¡Mejora tu producto con claridad y foco!",
-      date: "Sábado 30 de Mayo",
+      date: "Sábado 6 de Junio",
       description: "Espacio estratégico donde refinarás tu proyecto antes de entrar a automatizaciones con n8n. Recibirás feedback claro y estructurado sobre tu landing, pitch o MVP. Trabajarás en grupos pequeños con retroalimentación guiada según el framework Idea → Producto → Impacto usando el método Start → Stop → Continue.",
       activity: "Presenta tu proyecto en 1-2 minutos, participa en retroalimentación estructurada sobre claridad del problema, propuesta de valor y experiencia de usuario, y completa tu Mini Roadmap de Mejora con prioridades críticas."
     },
@@ -49,7 +49,7 @@ const ContentSection = () => {
       id: "week6",
       icon: <Zap className="h-6 w-6 text-white" />,
       title: "Sesión 6: Intro práctica a N8N - Automatiza como un pro!",
-      date: "Sábado 6 de Junio",
+      date: "Sábado 13 de Junio",
       description: "Descubre el poder de N8N para automatizar procesos. Crea flujos inteligentes que conecten formularios, emails y hojas de cálculo sin escribir código.",
       activity: "Flujo automatizado: formulario → respuesta personalizada → almacenamiento → email automático."
     },
@@ -57,7 +57,7 @@ const ContentSection = () => {
       id: "week7",
       icon: <Library className="h-6 w-6 text-white" />,
       title: "Sesión 7: Automatizaciones con impacto N8N + WhatsApp o Telegram + APIs",
-      date: "Sábado 13 de Junio",
+      date: "Sábado 20 de Junio",
       description: "Lleva las automatizaciones al siguiente nivel integrando WhatsApp, APIs y lógica condicional. Automatiza conversaciones y seguimiento de leads de forma profesional.",
       activity: "Flujo completo: formulario → WhatsApp automático → base de datos → notificación al equipo."
     },
@@ -85,7 +85,7 @@ const ContentSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-inspira-darkBlue font-semibold">
             <div className="flex items-center gap-2">
               <span>📅</span>
-              <span>Inicio: Sábado 2 de Mayo</span>
+              <span>Inicio: Sábado 9 de Mayo</span>
             </div>
             <div className="flex items-center gap-2">
               <span>⏳</span>
