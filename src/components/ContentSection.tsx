@@ -65,7 +65,7 @@ const ContentSection = () => {
       id: "week8",
       icon: <Award className="h-6 w-6 text-white" />,
       title: "Sesión 8: Inspira Tech Demo Day final: ¡Conectemos e inspiremos!",
-      date: "Sábado 20 de Junio",
+      date: "Sábado 27 de Junio",
       description: "Presenta tu proyecto ante jurados expertos del ecosistema tech. Los 3 mejores proyectos competirán en formato pitch con feedback profesional y oportunidades de networking.",
       activity: "Presentación final del proyecto y sesión de networking con la comunidad tech."
     }
