@@ -12,7 +12,7 @@ type SectionHeadingProps = {
 
 /** Encabezado de sección: etiqueta pequeña + título + subtítulo. */
 const SectionHeading = ({ eyebrow, title, subtitle, tone = "dark", className }: SectionHeadingProps) => (
-  <div className={cn("mx-auto mb-12 max-w-3xl text-center", className)}>
+  <div className={cn("mx-auto mb-10 max-w-3xl text-center", className)}>
     {eyebrow && (
       <span
         className={cn(

@@ -33,7 +33,7 @@ const initials = (name: string) =>
     .join("");
 
 const Team = () => (
-  <section id="mentores" className="bg-white px-4 py-20 md:py-28">
+  <section id="mentores" className="bg-white px-4 py-14 md:py-20">
     <div className="container mx-auto max-w-6xl">
       <SectionHeading
         eyebrow="Equipo"

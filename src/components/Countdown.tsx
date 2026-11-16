@@ -34,8 +34,8 @@ const Countdown = ({ target, className }: CountdownProps) => {
     <div className={className} role="timer" aria-label="Cuenta regresiva">
       <div className="flex items-center justify-center gap-2 sm:gap-3">
         {parts.map((p) => (
-          <div key={p.label} className="min-w-[4rem] rounded-xl bg-white/10 px-3 py-2 text-center ring-1 ring-white/20">
-            <div className="font-montserrat text-2xl font-extrabold tabular-nums text-white sm:text-3xl">
+          <div key={p.label} className="min-w-[3.5rem] rounded-xl bg-white/10 px-2.5 py-1.5 text-center ring-1 ring-white/20">
+            <div className="font-montserrat text-xl font-extrabold tabular-nums text-white sm:text-2xl">
               {pad(p.value)}
             </div>
             <div className="text-[11px] uppercase tracking-wider text-white/70">{p.label}</div>
