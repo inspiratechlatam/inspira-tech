@@ -75,7 +75,7 @@ const ContentSection = () => {
   ];
 
   return (
-    <section id="contenido" className="py-20 md:py-28 px-4 bg-gray-50">
+    <section id="contenido" className="py-14 md:py-20 px-4 bg-gray-50">
       <div className="container mx-auto max-w-4xl">
         <SectionHeading
           eyebrow="Contenido"

@@ -12,7 +12,7 @@ const reasons = [
 ];
 
 const WhyJoin = () => (
-  <section id="porque-unirse" className="bg-gray-50 px-4 py-20 md:py-28">
+  <section id="porque-unirse" className="bg-white px-4 py-14 md:py-20">
     <div className="container mx-auto max-w-5xl">
       <SectionHeading
         eyebrow="Lo que te llevas"

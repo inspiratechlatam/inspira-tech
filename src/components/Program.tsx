@@ -36,7 +36,7 @@ const spanClass = (index: number) =>
   index < 3 ? "lg:col-span-2" : index === 4 ? "sm:col-span-2 lg:col-span-3" : "lg:col-span-3";
 
 const Program = () => (
-  <section id="programa" className="bg-white px-4 py-20 md:py-28">
+  <section id="programa" className="bg-white px-4 py-14 md:py-20">
     <div className="container mx-auto max-w-6xl">
       <SectionHeading
         eyebrow="El programa"

@@ -9,8 +9,6 @@ import {
   youtubeEmbedUrl,
 } from "@/config/socialProof";
 
-const INSTAGRAM_PROFILE_URL = "https://www.instagram.com/inspiratech.la/";
-
 const QuoteIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
     <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
@@ -22,7 +20,7 @@ const Testimonials = () => {
   const posts = instagramPosts.map(instagramEmbedUrl).filter((u): u is string => Boolean(u));
 
   return (
-    <section id="comunidad" className="bg-gray-50 px-4 py-20 md:py-28">
+    <section id="comunidad" className="bg-gray-50 px-4 py-14 md:py-20">
       <div className="container mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Comunidad"
@@ -48,21 +46,11 @@ const Testimonials = () => {
         )}
 
         {posts.length > 0 && (
-          <div className="mb-16">
+          <div className="mb-12">
             <div className="mx-auto grid max-w-5xl items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {posts.map((src) => (
                 <InstagramEmbed key={src} src={src} />
               ))}
-            </div>
-            <div className="mt-8 text-center">
-              <a
-                href={INSTAGRAM_PROFILE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-inspira-purple/30 bg-white px-6 py-3 font-semibold text-inspira-darkBlue shadow-sm transition hover:bg-inspira-purple hover:text-white"
-              >
-                Síguenos en Instagram @inspiratech.la
-              </a>
             </div>
           </div>
         )}

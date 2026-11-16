@@ -22,8 +22,8 @@ const Index = () => {
       <ContentSection />
       <WhyJoin />
       <Testimonials />
-      <Pricing />
       <Team />
+      <Pricing />
       <FAQ />
       <CTA />
       <Footer />

@@ -15,7 +15,6 @@ const CTA = () => {
     pre: {
       title: "Tu próximo paso en el mundo digital empieza aquí",
       text: `Las inscripciones abren el ${paymentsOpenLabel().toLowerCase()}. Early bird S/${program.earlyBird.price} con cupos limitados.`,
-      note: "No hacemos spam. Solo te contactaremos cuando haya novedades importantes.",
     },
     open: {
       title: "Tu próximo paso en el mundo digital empieza aquí",
@@ -25,14 +24,13 @@ const CTA = () => {
     closed: {
       title: "Las inscripciones de esta cohorte ya cerraron",
       text: `La próxima cohorte será en ${program.nextCohortLabel}. Déjanos tus datos y te avisamos primero.`,
-      note: "No hacemos spam. Solo te contactaremos cuando haya novedades importantes.",
     },
   }[phase];
 
   return (
     <section
       id="unete"
-      className="bg-gradient-to-br from-inspira-darkBlue to-inspira-blue px-4 py-20 text-white md:py-28"
+      className="bg-gradient-to-br from-inspira-darkBlue to-inspira-blue px-4 py-14 text-white md:py-20"
     >
       <div className="container mx-auto max-w-3xl text-center">
         <h2 className="animate-fade-in mb-4 text-3xl font-extrabold md:text-5xl">{copy.title}</h2>
@@ -45,7 +43,7 @@ const CTA = () => {
           />
         </div>
 
-        <p className="mt-4 text-sm text-white/70">{copy.note}</p>
+        {"note" in copy && copy.note && <p className="mt-4 text-sm text-white/70">{copy.note}</p>}
       </div>
     </section>
   );
