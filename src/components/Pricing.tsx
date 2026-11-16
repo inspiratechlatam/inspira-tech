@@ -42,8 +42,8 @@ const Pricing = () => {
         <SectionHeading
           tone="light"
           eyebrow="Cupos limitados"
-          title="Asegura tu lugar en la cohorte"
-          subtitle={`${program.cohort} · Empieza el ${firstClassLabel().toLowerCase()}`}
+          title={`Únete a la ${program.cohort}`}
+          subtitle={`Empieza el ${firstClassLabel().toLowerCase()}`}
           className="mb-6 [&_h2]:text-2xl md:[&_h2]:text-3xl [&_p]:text-base"
         />
 

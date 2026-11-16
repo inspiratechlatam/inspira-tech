@@ -47,7 +47,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-14 md:py-20 px-4 bg-white">
+    <section id="faq" className="py-14 md:py-20 px-4 bg-gray-50">
       <div className="container mx-auto max-w-3xl">
         <SectionHeading eyebrow="FAQ" title="Preguntas frecuentes" />
 
@@ -65,7 +65,7 @@ const FAQ = () => {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="mb-3 rounded-2xl border border-gray-200 bg-gray-50 px-5 data-[state=open]:bg-white data-[state=open]:shadow-md"
+              className="mb-3 rounded-2xl border border-gray-200 bg-white px-5 data-[state=open]:bg-white data-[state=open]:shadow-md"
             >
               <AccordionTrigger className="py-4 text-left font-semibold">
                 {faq.question}

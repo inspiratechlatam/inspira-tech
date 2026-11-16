@@ -6,10 +6,9 @@ import Program from "@/components/Program";
 import ContentSection from "@/components/ContentSection";
 import WhyJoin from "@/components/WhyJoin";
 import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
+import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -23,9 +22,8 @@ const Index = () => {
       <WhyJoin />
       <Testimonials />
       <Team />
-      <Pricing />
       <FAQ />
-      <CTA />
+      <Pricing />
       <Footer />
     </div>
   );
