@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
+import EnrollButton from "./EnrollButton";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,9 +25,8 @@ const Navbar = () => {
     };
   }, []);
 
-  // Always use dark background on Resources page
-  const isResourcePage = location.pathname === "/recursos";
-  const navBackground = isResourcePage || isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent";
+  // Fondo oscuro fijo en todas las páginas que no son la landing (el texto es blanco)
+  const navBackground = !isHomePage || isScrolled ? "bg-inspira-darkBlue shadow-md py-2" : "bg-transparent";
 
   const navLinks = [{
     name: "Inicio",
@@ -41,16 +41,16 @@ const Navbar = () => {
     href: isHomePage ? "#contenido" : "/#contenido",
     isLocal: isHomePage
   }, {
+    name: "Precio",
+    href: isHomePage ? "#precios" : "/#precios",
+    isLocal: isHomePage
+  }, {
     name: "Equipo",
     href: isHomePage ? "#mentores" : "/#mentores",
     isLocal: isHomePage
   }, {
-    name: "Recursos",
-    href: "/recursos",
-    isLocal: false
-  }, {
-    name: "Testimonios",
-    href: isHomePage ? "#testimonios" : "/#testimonios",
+    name: "Comunidad",
+    href: isHomePage ? "#comunidad" : "/#comunidad",
     isLocal: isHomePage
   }, {
     name: "FAQ",
@@ -69,7 +69,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-5 xl:space-x-8 text-sm xl:text-base whitespace-nowrap">
           {navLinks.map(link => (
             link.isLocal ? (
               <a 
@@ -89,17 +89,14 @@ const Navbar = () => {
               </Link>
             )
           ))}
-          <a 
-            href="https://airtable.com/appOeyR0YYocmg8ns/shrKBBfrPvCqiGkay" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <EnrollButton
+            location="navbar"
+            short
             className="bg-inspira-turquoise text-inspira-darkBlue font-bold px-4 py-2 rounded-full hover:bg-opacity-90 transition-all text-center"
-          >
-            Únete
-          </a>
+          />
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white p-2">
             <Menu size={24} />
           </button>
@@ -107,7 +104,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-inspira-darkBlue py-4 px-6 shadow-md">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-inspira-darkBlue py-4 px-6 shadow-md">
           {navLinks.map(link => (
             link.isLocal ? (
               <a 
@@ -129,15 +126,12 @@ const Navbar = () => {
               </Link>
             )
           ))}
-          <a 
-            href="https://airtable.com/appOeyR0YYocmg8ns/shrKBBfrPvCqiGkay" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <EnrollButton
+            location="navbar_movil"
+            short
             className="block mt-2 bg-inspira-turquoise text-inspira-darkBlue font-bold px-4 py-2 rounded-full hover:bg-opacity-90 transition-all text-center"
             onClick={() => setIsMenuOpen(false)}
-          >
-            Únete
-          </a>
+          />
         </div>
       )}
     </nav>

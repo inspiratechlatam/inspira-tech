@@ -2,14 +2,17 @@
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Target, Globe, Sparkles, Library, PresentationIcon, Award, Zap, MessageCircle } from "lucide-react";
+import { firstClassLabel, program, sessionDates } from "@/config/program";
+import SectionHeading from "./SectionHeading";
 
 const ContentSection = () => {
+  const dates = sessionDates();
   const weeks = [
     {
       id: "week1",
       icon: <Target className="h-6 w-6 text-white" />,
       title: "Semana 1: Bienvenida y Onboarding + Introducción al ecosistema startups y no-code",
-      date: "Sábado 9 de Mayo",
+      date: dates[0],
       description: "Explora el impacto del ecosistema de startups y las oportunidades del no-code. Define el propósito estratégico de tu proyecto digital usando metodologías de design thinking.",
       activity: "Documento estratégico del proyecto: problema, solución, propósito, público objetivo y roadmap."
     },
@@ -17,7 +20,7 @@ const ContentSection = () => {
       id: "week2",
       icon: <Globe className="h-6 w-6 text-white" />,
       title: "Sesión 2: Intro a No-code con Lovable ¡Arma tu página web",
-      date: "Sábado 16 de Mayo",
+      date: dates[1],
       description: "Construye una landing page profesional sin programar. Aprende a diseñar propuestas de valor atractivas, formularios efectivos y conectar con bases de datos.",
       activity: "Landing page completa con propuesta de valor, formularios, testimonios y conexión a Supabase."
     },
@@ -25,7 +28,7 @@ const ContentSection = () => {
       id: "week3",
       icon: <PresentationIcon className="h-6 w-6 text-white" />,
       title: "Sesión 3: Arma tu pitch con IA & Sesión de feedback y credibilidad",
-      date: "Sábado 23 de Mayo",
+      date: dates[2],
       description: "Domina los 10 elementos clave de un pitch efectivo. Utiliza herramientas de AI como Gamma AI y Gemini para crear presentaciones impactantes y diferenciarte de la competencia.",
       activity: "Pitch deck profesional con research de ventajas competitivas y propuesta de valor diferencial."
     },
@@ -33,7 +36,7 @@ const ContentSection = () => {
       id: "week4",
       icon: <Sparkles className="h-6 w-6 text-white" />,
       title: "Sesión 4: Construye un prototipo app web funcional en Lovable.dev - Parte 2",
-      date: "Sábado 30 de Mayo",
+      date: dates[3],
       description: "Construye tu primer MVP usando metodologías ágiles. Aprende a priorizar funcionalidades, crear user journeys y desarrollar productos digitales iterativos.",
       activity: "Mini PRD, user journey y prototipo funcional de app web con múltiples secciones."
     },
@@ -41,7 +44,7 @@ const ContentSection = () => {
       id: "week5",
       icon: <MessageCircle className="h-6 w-6 text-white" />,
       title: "Sesión 5: Feedback Lab – ¡Mejora tu producto con claridad y foco!",
-      date: "Sábado 6 de Junio",
+      date: dates[4],
       description: "Espacio estratégico donde refinarás tu proyecto antes de entrar a automatizaciones con n8n. Recibirás feedback claro y estructurado sobre tu landing, pitch o MVP. Trabajarás en grupos pequeños con retroalimentación guiada según el framework Idea → Producto → Impacto usando el método Start → Stop → Continue.",
       activity: "Presenta tu proyecto en 1-2 minutos, participa en retroalimentación estructurada sobre claridad del problema, propuesta de valor y experiencia de usuario, y completa tu Mini Roadmap de Mejora con prioridades críticas."
     },
@@ -49,7 +52,7 @@ const ContentSection = () => {
       id: "week6",
       icon: <Zap className="h-6 w-6 text-white" />,
       title: "Sesión 6: Intro práctica a N8N - Automatiza como un pro!",
-      date: "Sábado 13 de Junio",
+      date: dates[5],
       description: "Descubre el poder de N8N para automatizar procesos. Crea flujos inteligentes que conecten formularios, emails y hojas de cálculo sin escribir código.",
       activity: "Flujo automatizado: formulario → respuesta personalizada → almacenamiento → email automático."
     },
@@ -57,7 +60,7 @@ const ContentSection = () => {
       id: "week7",
       icon: <Library className="h-6 w-6 text-white" />,
       title: "Sesión 7: Automatizaciones con impacto N8N + WhatsApp o Telegram + APIs",
-      date: "Sábado 20 de Junio",
+      date: dates[6],
       description: "Lleva las automatizaciones al siguiente nivel integrando WhatsApp, APIs y lógica condicional. Automatiza conversaciones y seguimiento de leads de forma profesional.",
       activity: "Flujo completo: formulario → WhatsApp automático → base de datos → notificación al equipo."
     },
@@ -65,35 +68,35 @@ const ContentSection = () => {
       id: "week8",
       icon: <Award className="h-6 w-6 text-white" />,
       title: "Sesión 8: Inspira Tech Demo Day final: ¡Conectemos e inspiremos!",
-      date: "Sábado 27 de Junio",
+      date: dates[7],
       description: "Presenta tu proyecto ante jurados expertos del ecosistema tech. Los 3 mejores proyectos competirán en formato pitch con feedback profesional y oportunidades de networking.",
       activity: "Presentación final del proyecto y sesión de networking con la comunidad tech."
     }
   ];
 
   return (
-    <section id="contenido" className="py-20 px-4 bg-white">
+    <section id="contenido" className="py-20 md:py-28 px-4 bg-gray-50">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-inspira-darkBlue mb-6 animate-fade-in">
-          Lo que aprenderás en <span className="text-inspira-blue">8 semanas</span>
-        </h2>
-        
-        <div className="text-center mb-8 animate-fade-in animate-delay-100">
-          <p className="text-lg text-gray-600 mb-4 max-w-2xl mx-auto">
-            Un programa intensivo e innovador diseñado para darte las habilidades digitales que necesitas para destacar en el mundo tech.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-inspira-darkBlue font-semibold">
-            <div className="flex items-center gap-2">
-              <span>📅</span>
-              <span>Inicio: Sábado 9 de Mayo</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span>⏳</span>
-              <span>Duración: 8 semanas, con 1 sesión en vivo de 2 horas por semana</span>
-            </div>
-          </div>
+        <SectionHeading
+          eyebrow="Contenido"
+          title={
+            <>
+              Lo que aprenderás en <span className="text-inspira-purple">{program.sessions} semanas</span>
+            </>
+          }
+          subtitle="Un programa intensivo diseñado para darte las habilidades digitales que necesitas para destacar en el mundo tech."
+          className="mb-6"
+        />
+
+        <div className="mb-10 flex flex-col items-center justify-center gap-3 text-sm font-semibold text-inspira-darkBlue sm:flex-row sm:gap-4">
+          <span className="rounded-full bg-white px-4 py-2 shadow-sm ring-1 ring-gray-100">
+            📅 Inicio: {firstClassLabel()}
+          </span>
+          <span className="rounded-full bg-white px-4 py-2 shadow-sm ring-1 ring-gray-100">
+            ⏳ 1 sesión en vivo de 2 horas por semana
+          </span>
         </div>
-        
+
         <Accordion type="single" collapsible className="w-full space-y-4">
           {weeks.map((week, index) => (
             <AccordionItem 

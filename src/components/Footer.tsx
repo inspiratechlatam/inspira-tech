@@ -1,5 +1,7 @@
 import React from "react";
 import { Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
+import { analyticsEnabled, resetConsent } from "@/lib/analytics";
 
 const Footer = () => {
   return (
@@ -52,8 +54,9 @@ const Footer = () => {
               <li><a href="#inicio" className="hover:text-inspira-turquoise transition-colors">Inicio</a></li>
               <li><a href="#programa" className="hover:text-inspira-turquoise transition-colors">El programa</a></li>
               <li><a href="#contenido" className="hover:text-inspira-turquoise transition-colors">Contenido</a></li>
-              <li><a href="#mentores" className="hover:text-inspira-turquoise transition-colors">Mentores</a></li>
-              <li><a href="#testimonios" className="hover:text-inspira-turquoise transition-colors">Testimonios</a></li>
+              <li><a href="#precios" className="hover:text-inspira-turquoise transition-colors">Precio</a></li>
+              <li><a href="#mentores" className="hover:text-inspira-turquoise transition-colors">Equipo</a></li>
+              <li><a href="#comunidad" className="hover:text-inspira-turquoise transition-colors">Comunidad</a></li>
               <li><a href="#faq" className="hover:text-inspira-turquoise transition-colors">FAQ</a></li>
             </ul>
           </div>
@@ -71,6 +74,23 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+          <div className="mb-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <Link to="/privacidad" className="hover:text-inspira-turquoise transition-colors">
+              Política de privacidad
+            </Link>
+            <Link to="/terminos" className="hover:text-inspira-turquoise transition-colors">
+              Términos y condiciones
+            </Link>
+            {analyticsEnabled() && (
+              <button
+                type="button"
+                onClick={resetConsent}
+                className="hover:text-inspira-turquoise transition-colors"
+              >
+                Configurar cookies
+              </button>
+            )}
+          </div>
           <p>&copy; {new Date().getFullYear()} Inspira Tech. Todos los derechos reservados.</p>
         </div>
       </div>

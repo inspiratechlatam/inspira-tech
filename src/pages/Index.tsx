@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -6,9 +5,9 @@ import Features from "@/components/Features";
 import Program from "@/components/Program";
 import ContentSection from "@/components/ContentSection";
 import WhyJoin from "@/components/WhyJoin";
-import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
-import ResourcesSection from "@/components/ResourcesSection";
+import Pricing from "@/components/Pricing";
+import Team from "@/components/Team";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -22,9 +21,9 @@ const Index = () => {
       <Program />
       <ContentSection />
       <WhyJoin />
-      <Team />
       <Testimonials />
-      <ResourcesSection />
+      <Pricing />
+      <Team />
       <FAQ />
       <CTA />
       <Footer />
